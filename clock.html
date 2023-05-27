@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+</head>
+<body>
+
+    <div id="digiClock">
+
+
+    </div>
+
+    <script>
+        function displayTine () {
+            let currentTime = new Date();
+            let getHour = currentTime.getHours();
+            let getMinute = currentTime.getMinutes();
+            let getSecond = currentTime.getSeconds();
+
+
+            var formattedTime = getHour + ":" + getMinute + ":" + getSecond;
+             document.getElementById("digiClock").innerHTML = formattedTime;
+        }
+
+
+    setInterval(displayTine, 1000);
+
+
+
+    </script>
+    
+</body>
+</html>
